@@ -2,7 +2,7 @@
   "name"       : "my-wordpress-project",
   "type"       : "project",
   "description": "My wordpress project",
-  "homepage"   : "https://bitbucket.org/gwa/my-wordpress-project/",
+  "homepage"   : "https://github.com/gwa/my-wordpress-project/",
   "authors"    : [{
       "name"    : "Great White Ark",
       "homepage": "http://www.greatwhiteark.com"
@@ -34,29 +34,29 @@
     }
   ],
   "require": {
-    "php"                                       : ">=5.4",
+    "php"                                       : "^5.6 || ^7.0",
 
-    "composer/installers"                       : "~1.0.12",
-    "gwa/wp-disable-auto-update"                : "^1.0.0",
+    "composer/installers"                       : "^1.0",
     "johnpbloch/wordpress"                      : "4.5.0",
-    "gwa/zero-library"                          : "4.0.x-dev",
+    "gwa/zero-library"                          : "5.0.x-dev",
     "gwa/zero-module-id-columns"                : "^0.1",
     "gwa/zero-module-cleanup"                   : "^0.1",
 
-    "koodimonni/composer-dropin-installer"      : "~1.0",
+    "koodimonni/composer-dropin-installer"      : "^1.0",
     "koodimonni-language/core-de_de"            : "4.5",
     "koodimonni-language/core-en_gb"            : "4.5",
 
-    "anolilab/wordpress-salt-generator"         : "^1.2.0"
+    "anolilab/wordpress-salt-generator"         : "^1.2",
+
+    "roots/wp-password-bcrypt"                  : "^1.0"
   },
   "require-dev": {
-    "vlucas/phpdotenv"                          : "~2.0.1",
+    "vlucas/phpdotenv"                          : "^2.2",
 
     "mockery/mockery"                           : "~0.9.4",
-    "phpunit/phpunit"                           : "^4.6",
+    "phpunit/phpunit"                           : "^5.3",
 
-    "wpackagist-plugin/debug-bar"               : "~0.8.2",
-    "wpackagist-plugin/debug-bar-post-types"    : "~1.2"
+    "gwa/dom-inspector"                         : "^0.1.0"
   },
   "scripts": {
     "test"                                      : "sh vendor/bin/phpunit",

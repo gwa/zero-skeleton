@@ -1,0 +1,24 @@
+# Application
+public/app/plugins/*
+public/app/upgrade
+public/app/uploads/*
+public/app/mu-plugins/*
+public/app/languages/*
+
+!public/app/mu-plugins/register-theme-directory.php
+!public/app/mu-plugins/bedrock-autoloader.php
+
+# WordPress
+public/wp
+public/.htaccess
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Node Package Manager
+node_modules
+
+# Bower Manager
+bower_components
