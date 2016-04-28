@@ -1,0 +1,84 @@
+{
+  "name"       : "my-wordpress-project",
+  "type"       : "project",
+  "description": "My wordpress project",
+  "homepage"   : "https://bitbucket.org/gwa/my-wordpress-project/",
+  "authors"    : [{
+      "name"    : "Great White Ark",
+      "homepage": "http://www.greatwhiteark.com"
+  }],
+  "keywords": [],
+
+  "config": {
+    "preferred-install"                         : "dist",
+    "generate-salts"                            : true
+  },
+  "autoload": {
+    "psr-4": {
+      "Gwa\\Wordpress\\Template\\MyTheme\\"     : "public/app/themes/mytheme/src/lib"
+    }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "Gwa\\Wordpress\\Tests\\"             : "tests/"
+      }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url" : "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    }
+  ],
+  "require": {
+    "php"                                       : ">=5.4",
+
+    "composer/installers"                       : "~1.0.12",
+    "gwa/wp-disable-auto-update"                : "^1.0.0",
+    "johnpbloch/wordpress"                      : "4.5.0",
+    "gwa/zero-library"                          : "4.0.x-dev",
+    "gwa/zero-module-id-columns"                : "^0.1",
+    "gwa/zero-module-cleanup"                   : "^0.1",
+
+    "koodimonni/composer-dropin-installer"      : "~1.0",
+    "koodimonni-language/core-de_de"            : "4.5",
+    "koodimonni-language/core-en_gb"            : "4.5",
+
+    "anolilab/wordpress-salt-generator"         : "^1.2.0"
+  },
+  "require-dev": {
+    "vlucas/phpdotenv"                          : "~2.0.1",
+
+    "mockery/mockery"                           : "~0.9.4",
+    "phpunit/phpunit"                           : "^4.6",
+
+    "wpackagist-plugin/debug-bar"               : "~0.8.2",
+    "wpackagist-plugin/debug-bar-post-types"    : "~1.2"
+  },
+  "scripts": {
+    "test"                                      : "sh vendor/bin/phpunit",
+    "post-install-cmd"                          : [
+      "Anolilab\\Wordpress\\SaltGenerator\\Generator::addSalts",
+      "php -r \"touch('public/.htaccess');\""
+    ]
+  },
+  "extra": {
+    "installer-paths": {
+      "public/app/mu-plugins/{$name}/"          : ["type:wordpress-muplugin", "roots/soil"],
+      "public/app/plugins/{$name}/"             : ["type:wordpress-plugin", "type:wordpress-dropin"],
+      "public/app/themes/{$name}/"              : ["type:wordpress-theme"]
+    },
+    "dropin-paths": {
+      "public/app/languages/"                   : ["type:wordpress-language"],
+      "public/app/languages/plugins/"           : ["type:wordpress-plugin-language"],
+      "public/app/languages/themes/"            : ["type:wordpress-theme-language"]
+    },
+    "wordpress-install-dir"                     : "public/wp",
+    "wordpress-languages-dir"                   : "public/app/languages/"
+  },
+  "minimum-stability"                           : "dev",
+  "prefer-stable"                               : true
+}
