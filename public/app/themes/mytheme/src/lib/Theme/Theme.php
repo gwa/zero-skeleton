@@ -1,5 +1,5 @@
 <?php
-namespace Gwa\Wordpress\Template\MyTemplate\Theme;
+namespace Gwa\Wordpress\Template\MyTheme\Theme;
 
 use Gwa\Wordpress\Zero\Theme\AbstractTheme;
 

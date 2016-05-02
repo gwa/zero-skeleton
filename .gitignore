@@ -22,3 +22,6 @@ node_modules
 
 # Bower Manager
 bower_components
+
+# Composer
+vendor

@@ -1,3 +1,3 @@
 <?php
-$mytheme->createController('Gwa\Wordpress\Template\MyTemplate\Controller\Index')
+$mytheme->createController('Gwa\Wordpress\Template\MyTheme\Controller\Index')
     ->render();

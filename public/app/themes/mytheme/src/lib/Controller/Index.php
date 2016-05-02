@@ -1,5 +1,5 @@
 <?php
-namespace Gwa\Wordpress\Template\MyTemplate\Controller;
+namespace Gwa\Wordpress\Template\MyTheme\Controller;
 
 use Gwa\Wordpress\Zero\Controller\AbstractController;
 
