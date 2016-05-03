@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7dd76d7f36a296b242f43b9c35a30e16",
-    "content-hash": "d0ddbb8d2279bc071a6b49f67a07281a",
+    "hash": "08551d889042f72d8b086f81efcf2490",
+    "content-hash": "99605a1b49b19085a0da350739a20782",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -327,21 +327,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gwa/zero-library.git",
-                "reference": "61dba73583a97b547201053f626b62c98d61623d"
+                "reference": "ce78929e58e06f31f75cc31967f3a196f584b1e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gwa/zero-library/zipball/61dba73583a97b547201053f626b62c98d61623d",
-                "reference": "61dba73583a97b547201053f626b62c98d61623d",
+                "url": "https://api.github.com/repos/gwa/zero-library/zipball/ce78929e58e06f31f75cc31967f3a196f584b1e4",
+                "reference": "ce78929e58e06f31f75cc31967f3a196f584b1e4",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.0",
                 "gwa/wp-bridge": "^2.0",
-                "jarednova/timber": "^0.22",
                 "jjgrainger/wp-custom-post-type-class": "^1.4",
                 "php": ">=5.4",
-                "roots/soil": "~3.6",
+                "roots/soil": "^3.6",
+                "timber/timber": "^0.22.6",
                 "webdevstudios/cmb2": "^2.1"
             },
             "require-dev": {
@@ -376,7 +376,7 @@
                 "zero",
                 "zero-library"
             ],
-            "time": "2016-04-28 13:38:19"
+            "time": "2016-05-03 07:59:07"
         },
         {
             "name": "gwa/zero-module-cleanup",
@@ -637,62 +637,6 @@
             "time": "2013-04-30 18:00:34"
         },
         {
-            "name": "jarednova/timber",
-            "version": "0.22.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/timber/timber.git",
-                "reference": "06e7faded55fcbcedb34d753bc93987cab4ee978"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/06e7faded55fcbcedb34d753bc93987cab4ee978",
-                "reference": "06e7faded55fcbcedb34d753bc93987cab4ee978",
-                "shasum": ""
-            },
-            "require": {
-                "asm89/twig-cache-extension": "~1.0",
-                "composer/installers": "~1.0",
-                "php": ">=5.3.0",
-                "twig/twig": "1.*",
-                "upstatement/routes": "0.3"
-            },
-            "require-dev": {
-                "jarednova/markdowndocs": "dev-master",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "1.0.*",
-                "wp-cli/wp-cli": "*",
-                "wpackagist-plugin/advanced-custom-fields": "4.*"
-            },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "classmap": [
-                    "lib/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jared Novack",
-                    "email": "jared@upstatement.com",
-                    "homepage": "http://upstatement.com"
-                }
-            ],
-            "description": "Plugin to write WordPress themes w Object-Oriented Code and the Twig Template Engine",
-            "homepage": "http://timber.upstatement.com",
-            "keywords": [
-                "templating",
-                "themes",
-                "timber",
-                "twig"
-            ],
-            "time": "2016-03-13 15:44:19"
-        },
-        {
             "name": "jjgrainger/wp-custom-post-type-class",
             "version": "v1.4",
             "source": {
@@ -817,10 +761,10 @@
         },
         {
             "name": "koodimonni-language/core-de_de",
-            "version": "4.5",
+            "version": "4.5.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.5/de_DE.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.5.1/de_DE.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -838,10 +782,10 @@
         },
         {
             "name": "koodimonni-language/core-en_gb",
-            "version": "4.5",
+            "version": "4.5.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.5/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.5.1/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1062,6 +1006,62 @@
                 "wordpress wp bcrypt password"
             ],
             "time": "2016-03-01 16:27:06"
+        },
+        {
+            "name": "timber/timber",
+            "version": "0.22.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timber/timber.git",
+                "reference": "06e7faded55fcbcedb34d753bc93987cab4ee978"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timber/timber/zipball/06e7faded55fcbcedb34d753bc93987cab4ee978",
+                "reference": "06e7faded55fcbcedb34d753bc93987cab4ee978",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/twig-cache-extension": "~1.0",
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0",
+                "twig/twig": "1.*",
+                "upstatement/routes": "0.3"
+            },
+            "require-dev": {
+                "jarednova/markdowndocs": "dev-master",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "1.0.*",
+                "wp-cli/wp-cli": "*",
+                "wpackagist-plugin/advanced-custom-fields": "4.*"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jared Novack",
+                    "email": "jared@upstatement.com",
+                    "homepage": "http://upstatement.com"
+                }
+            ],
+            "description": "Plugin to write WordPress themes w Object-Oriented Code and the Twig Template Engine",
+            "homepage": "http://timber.upstatement.com",
+            "keywords": [
+                "templating",
+                "themes",
+                "timber",
+                "twig"
+            ],
+            "time": "2016-03-13 15:44:19"
         },
         {
             "name": "twig/twig",
@@ -2352,7 +2352,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -2458,7 +2458,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^5.6 || ^7.0"
+        "php": ">=5.4"
     },
     "platform-dev": []
 }

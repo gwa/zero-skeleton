@@ -34,7 +34,7 @@
     }
   ],
   "require": {
-    "php"                                       : "^5.6 || ^7.0",
+    "php"                                       : ">=5.4",
 
     "composer/installers"                       : "^1.0",
     "johnpbloch/wordpress"                      : "4.5.1",
@@ -43,8 +43,8 @@
     "gwa/zero-module-cleanup"                   : "^0.2",
 
     "koodimonni/composer-dropin-installer"      : "^1.0",
-    "koodimonni-language/core-de_de"            : "4.5",
-    "koodimonni-language/core-en_gb"            : "4.5",
+    "koodimonni-language/core-de_de"            : "4.5.1",
+    "koodimonni-language/core-en_gb"            : "4.5.1",
 
     "anolilab/wordpress-salt-generator"         : "^1.2",
 
@@ -53,7 +53,7 @@
   "require-dev": {
     "vlucas/phpdotenv"                          : "^2.2",
 
-    "mockery/mockery"                           : "~0.9.4",
+    "mockery/mockery"                           : "^0.9",
     "phpunit/phpunit"                           : "^5.3",
 
     "gwa/dom-inspector"                         : "^0.1.0"
@@ -67,7 +67,7 @@
   },
   "extra": {
     "installer-paths": {
-      "public/app/mu-plugins/{$name}/"          : ["type:wordpress-muplugin", "roots/soil", "jarednova/timber", "webdevstudios/cmb2"],
+      "public/app/mu-plugins/{$name}/"          : ["type:wordpress-muplugin", "roots/soil", "timber/timber", "webdevstudios/cmb2"],
       "public/app/plugins/{$name}/"             : ["type:wordpress-plugin", "type:wordpress-dropin"],
       "public/app/themes/{$name}/"              : ["type:wordpress-theme"]
     },

@@ -1,0 +1,17 @@
+{
+  "name": "zero-skeleton",
+  "authors": [],
+  "description": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "resolutions": {
+    "jquery": "~1.11.*"
+  }
+}
