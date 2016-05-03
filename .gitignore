@@ -5,7 +5,6 @@ public/app/uploads/*
 public/app/mu-plugins/*
 public/app/languages/*
 
-!public/app/mu-plugins/register-theme-directory.php
 !public/app/mu-plugins/bedrock-autoloader.php
 
 # WordPress
