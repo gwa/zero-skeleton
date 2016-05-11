@@ -54,7 +54,7 @@
     "vlucas/phpdotenv"                          : "^2.2",
 
     "mockery/mockery"                           : "^0.9",
-    "phpunit/phpunit"                           : "^5.3",
+    "phpunit/phpunit"                           : "^4.8",
 
     "gwa/dom-inspector"                         : "^0.1.0"
   },
@@ -67,8 +67,7 @@
   },
   "extra": {
     "installer-paths": {
-      "public/app/mu-plugins/{$name}/"          : ["type:wordpress-muplugin", "roots/soil", "timber/timber", "webdevstudios/cmb2"],
-      "public/app/plugins/{$name}/"             : ["type:wordpress-plugin", "type:wordpress-dropin"],
+      "public/app/plugins/{$name}/"             : ["type:wordpress-plugin", "type:wordpress-dropin", "type:wordpress-muplugin"],
       "public/app/themes/{$name}/"              : ["type:wordpress-theme"]
     },
     "dropin-paths": {

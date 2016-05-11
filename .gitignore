@@ -5,8 +5,6 @@ public/app/uploads/*
 public/app/mu-plugins/*
 public/app/languages/*
 
-!public/app/mu-plugins/bedrock-autoloader.php
-
 # WordPress
 public/wp
 public/.htaccess
